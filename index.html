@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DevComp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/layers(1).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700&subset=latin,latin-ext">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/theme/dracula.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="centerd">
+            <img src="./images/layers(1).png" alt="DevComp Logo">
+            <p>DevComp</p>
+        </div>
+    </div>
+
+    <div class="top-area">
+        <div class="logo-img">
+            <img src="./images/layers(1).png" alt="DevComp Logo">
+            <p>DevComp</p>
+        </div>
+        <div class="rig-scee">
+            <svg viewBox="0 0 20 20" class="rotatee" aria-hidden="true">
+                <path d="M0 9.002C0 8.45.455 8 .992 8h18.016c.548 0 .992.456.992 1.002v9.996c0 .553-.455 1.002-.992 1.002H.992C.444 20 0 19.544 0 18.998V9.002zm0-8C0 .45.451 0 .99 0h4.02A.99.99 0 016 1.003v4.994C6 6.551 5.549 7 5.01 7H.99A.99.99 0 010 5.997V1.003zm7 0C7 .45 7.451 0 7.99 0h4.02A.99.99 0 0113 1.003v4.994C13 6.551 12.549 7 12.01 7H7.99A.99.99 0 017 5.997V1.003zm7 0C14 .45 14.451 0 14.99 0h4.02A.99.99 0 0120 1.003v4.994C20 6.551 19.549 7 19.01 7h-4.02A.99.99 0 0114 5.997V1.003z"></path>
+            </svg>
+        </div>
+        <div class="full-screen">
+            <img src="./images/full-screen.png" alt="Toggle Full Screen">
+        </div>
+        <button id="run-btn">
+            <img src="./images/play.png" alt="Run Code">
+        </button>
+    </div>
+
+    <div class="code-editor">
+        <div class="code">
+            <div class="html-area">
+                <div class="topde">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="editor-icon" aria-hidden="true">
+                        <path fill="#E44D26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                    </svg>
+                    <p>HTML</p>
+                </div>
+                <textarea id="html-code" aria-label="HTML Editor"></textarea>
+            </div>
+            <div class="css-area">
+                <div class="topde">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="editor-icon" aria-hidden="true">
+                        <path fill="#1572B6" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+                    </svg>
+                    <p>CSS</p>
+                </div>
+                <textarea id="css-code" aria-label="CSS Editor"></textarea>
+            </div>
+            <div class="js-area">
+                <div class="topde">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="editor-icon" aria-hidden="true">
+                        <path fill="#F0DB4F" d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                    </svg>
+                    <p>JS</p>
+                </div>
+                <textarea id="js-code" aria-label="JavaScript Editor"></textarea>
+            </div>
+        </div>
+        <div id="resultss" class="tabcontent resultnf">
+            <iframe id="result" title="Code Output"></iframe>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/css/css.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/javascript/javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/xml/xml.js"></script>
+    <script src="./js/editor.js"></script>
+    <script src="./js/ui.js"></script>
+</body>
+</html>

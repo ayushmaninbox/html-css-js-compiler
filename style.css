@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans%3A300%2C400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext");
+
+:root {
+    --toparea: #1a1a1a;
+    --color: #ffffff;
+    --bodycolor: #1a1a1a;
+    --htmlcsscolor: #242424;
+    --bordernu: #333333;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s all;
+}
+
+body {
+    height: 100vh;
+    color: var(--color);
+    background: var(--bodycolor);
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.top-area {
+    width: 100%;
+    height: 49px;
+    background: var(--toparea);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.rig-scee {
+    padding: 6px;
+    background: #282a36;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rig-scee svg {
+    width: 16px;
+    height: 16px;
+}
+
+.rotatee {
+    transform: rotate(-270deg);
+}
+
+.rotatee.rotss {
+    transform: rotate(270deg);
+}
+
+.rig-scee svg path {
+    fill: white;
+}
+
+.full-screen {
+    padding: 4px;
+    background: #282a36;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-screen.colorr {
+    background: #f4018d;
+}
+
+.full-screen img {
+    width: 20px;
+    height: 20px;
+}
+
+.top-area button {
+    padding: 4px;
+    background: #282a36;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-area button img {
+    width: 20px;
+    height: 20px;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: var(--bodycolor);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centerd p {
+    font-size: 23px;
+    color: var(--color);
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.top-area .logo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+
+.top-area .logo-img img {
+    width: 32px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.code-editor {
+    width: 100%;
+    height: calc(100% - 49px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.code-editor.right {
+    flex-direction: row-reverse !important;
+}
+
+.code.hide {
+    display: none !important;
+}
+
+.code {
+    overflow-y: auto;
+    background-color: var(--toparea);
+    width: 49rem;
+    height: 100%;
+}
+
+#resultss {
+    width: 100%;
+    height: 100%;
+    background: url('./images/runn.png') no-repeat;
+    background-position: center;
+    background-size: 23rem;
+    padding: 8px;
+}
+
+#result {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.backcor {
+    background-color: #fff;
+}
+
+.CodeMirror {
+    height: 234px !important;
+    font-family: Lato, sans-serif !important;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--toparea) !important;
+    color: var(--color) !important;
+}
+
+.CodeMirror-sizer {
+    margin-left: 29px !important;
+}
+
+.topde {
+    height: 27px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    background: #282a36;
+    width: 85px;
+    padding: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.editor-icon  {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.html-area,
+.css-area,
+.js-area {
+    padding-left: 10px;
+    background: var(--htmlcsscolor);
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.html-area {
+    padding-top: 10px;
+}
+
+@media (max-width:666px) {
+    .rotatee {
+        transform: rotate(180deg) !important;
+    }
+    .rotatee.rotss {
+        transform: rotate(360deg) !important;
+    }      
+
+    .code-editor.right {
+        flex-direction: column-reverse !important;
+    }
+
+    #resultss {
+        box-shadow: 0px 0px 22px #0000001c;
+        z-index: 2;
+    }
+
+    .code {
+        width: 100% !important;
+    }
+
+    .code-editor {
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width:304px) {
+    #resultss {
+        background-size: 16rem !important;
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --dark-blue: #1a1a1a;
+        --light-blue: #c5c8d4;
+        --bodycolor: #1a1a1a;
+        --toparea: #242424;
+        --color: #ffffff;
+        --htmlcsscolor: #1a1a1a;
+        --bordernu: #333333;
+    }
+}
