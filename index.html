@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DevComp</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./images/layers(1).png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700&subset=latin,latin-ext">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/theme/dracula.css">
@@ -14,27 +14,36 @@
 <body>
     <div id="loading">
         <div class="centerd">
-            <img src="./images/layers(1).png" alt="DevComp Logo">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg" alt="DevComp Logo">
             <p>DevComp</p>
         </div>
     </div>
 
     <div class="top-area">
         <div class="logo-img">
-            <img src="./images/layers(1).png" alt="DevComp Logo">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg" alt="DevComp Logo">
             <p>DevComp</p>
         </div>
-        <div class="rig-scee">
-            <svg viewBox="0 0 20 20" class="rotatee" aria-hidden="true">
-                <path d="M0 9.002C0 8.45.455 8 .992 8h18.016c.548 0 .992.456.992 1.002v9.996c0 .553-.455 1.002-.992 1.002H.992C.444 20 0 19.544 0 18.998V9.002zm0-8C0 .45.451 0 .99 0h4.02A.99.99 0 016 1.003v4.994C6 6.551 5.549 7 5.01 7H.99A.99.99 0 010 5.997V1.003zm7 0C7 .45 7.451 0 7.99 0h4.02A.99.99 0 0113 1.003v4.994C13 6.551 12.549 7 12.01 7H7.99A.99.99 0 017 5.997V1.003zm7 0C14 .45 14.451 0 14.99 0h4.02A.99.99 0 0120 1.003v4.994C20 6.551 19.549 7 19.01 7h-4.02A.99.99 0 0114 5.997V1.003z"></path>
-            </svg>
+        <div class="controls">
+            <div class="rig-scee">
+                <svg viewBox="0 0 20 20" class="rotatee" aria-hidden="true">
+                    <path d="M0 9.002C0 8.45.455 8 .992 8h18.016c.548 0 .992.456.992 1.002v9.996c0 .553-.455 1.002-.992 1.002H.992C.444 20 0 19.544 0 18.998V9.002zm0-8C0 .45.451 0 .99 0h4.02A.99.99 0 016 1.003v4.994C6 6.551 5.549 7 5.01 7H.99A.99.99 0 010 5.997V1.003zm7 0C7 .45 7.451 0 7.99 0h4.02A.99.99 0 0113 1.003v4.994C13 6.551 12.549 7 12.01 7H7.99A.99.99 0 017 5.997V1.003zm7 0C14 .45 14.451 0 14.99 0h4.02A.99.99 0 0120 1.003v4.994C20 6.551 19.549 7 19.01 7h-4.02A.99.99 0 0114 5.997V1.003z"></path>
+                </svg>
+            </div>
+            <div class="font-size-control">
+                <button id="decrease-font">A-</button>
+                <button id="increase-font">A+</button>
+            </div>
+            <div class="full-screen">
+                <img src="https://cdn.jsdelivr.net/gh/primer/octicons/icons/screen-full-16.svg" alt="Toggle Full Screen">
+            </div>
+            <button id="download-btn">
+                <img src="https://cdn.jsdelivr.net/gh/primer/octicons/icons/download-16.svg" alt="Download Project">
+            </button>
+            <button id="run-btn">
+                <img src="https://cdn.jsdelivr.net/gh/primer/octicons/icons/play-16.svg" alt="Run Code">
+            </button>
         </div>
-        <div class="full-screen">
-            <img src="./images/full-screen.png" alt="Toggle Full Screen">
-        </div>
-        <button id="run-btn">
-            <img src="./images/play.png" alt="Run Code">
-        </button>
     </div>
 
     <div class="code-editor">
@@ -76,7 +85,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/css/css.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/javascript/javascript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/xml/xml.js"></script>
-    <script src="./js/editor.js"></script>
-    <script src="./js/ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="editor.js"></script>
 </body>
 </html>
