@@ -19,10 +19,6 @@ DevComp is a lightweight, browser-based code editor that supports HTML, CSS, and
 ![Loading Screen](./screenshots/loading.png)
 *The initial loading screen of DevComp*
 
-### Code Editor View
-![Code Editor View](./screenshots/code-view.png)
-*The main interface of DevComp showing HTML, CSS, and JavaScript panels*
-
 ### Webpage Homepage
 ![Webpage Homepage](./screenshots/webpage.png)
 *An example of a webpage created using DevComp*
